@@ -27,7 +27,7 @@ I would definitely spend more time exploring the data, creating new features, an
 |--|--|--|--|--|
 |initial|default|default|default|1.82227|
 |add_features|default|default|default|0.49663|
-|hpo||max_depth: 30|max_features: 0.92505|max_samples: 0.92904|0.76297|
+|hpo|max_depth: 30|max_features: 0.92505|max_samples: 0.92904|0.76297|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
