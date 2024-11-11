@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>project-template</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>project_notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7643,7 +7643,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># # Fill in your user name and key from creating the kaggle account and API token file</span>
@@ -9344,10 +9344,10 @@ Name: count, dtype: float32</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>kaggle<span class="w"> </span>competitions<span class="w"> </span>submissions<span class="w"> </span>-c<span class="w"> </span>bike-sharing-demand<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n<span class="w"> </span>+1<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">6</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>kaggle<span class="w"> </span>competitions<span class="w"> </span>submissions<span class="w"> </span>-c<span class="w"> </span>bike-sharing-demand
 </pre></div>
 </div>
 </div>
@@ -9359,9 +9359,12 @@ Name: count, dtype: float32</pre>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>'tail' is not recognized as an internal or external command,
-operable program or batch file.
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>fileName                     date                 description                        status    publicScore  privateScore  
+---------------------------  -------------------  ---------------------------------  --------  -----------  ------------  
+submission_new_hpo.csv       2024-11-08 21:18:41  new features with hyperparameters  complete  0.76297      0.76297       
+submission_new_features.csv  2024-11-08 20:29:37  new features                       complete  0.49663      0.49663       
+submission.csv               2024-11-08 18:17:01  first raw submission               complete  1.82227      1.82227       
 </pre>
 </div>
 </div>
@@ -10691,16 +10694,33 @@ Feature Metadata (Processed):
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>kaggle<span class="w"> </span>competitions<span class="w"> </span>submissions<span class="w"> </span>-c<span class="w"> </span>bike-sharing-demand<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n<span class="w"> </span>+1<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">6</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>kaggle<span class="w"> </span>competitions<span class="w"> </span>submissions<span class="w"> </span>-c<span class="w"> </span>bike-sharing-demand
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>fileName                     date                 description                        status    publicScore  privateScore  
+---------------------------  -------------------  ---------------------------------  --------  -----------  ------------  
+submission_new_hpo.csv       2024-11-08 21:18:41  new features with hyperparameters  complete  0.76297      0.76297       
+submission_new_features.csv  2024-11-08 20:29:37  new features                       complete  0.49663      0.49663       
+submission.csv               2024-11-08 18:17:01  first raw submission               complete  1.82227      1.82227       
+</pre>
 </div>
 </div>
 </div>
@@ -12317,16 +12337,33 @@ Name: count, dtype: float32</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>kaggle<span class="w"> </span>competitions<span class="w"> </span>submissions<span class="w"> </span>-c<span class="w"> </span>bike-sharing-demand<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n<span class="w"> </span>+1<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">6</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>kaggle<span class="w"> </span>competitions<span class="w"> </span>submissions<span class="w"> </span>-c<span class="w"> </span>bike-sharing-demand
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>fileName                     date                 description                        status    publicScore  privateScore  
+---------------------------  -------------------  ---------------------------------  --------  -----------  ------------  
+submission_new_hpo.csv       2024-11-08 21:18:41  new features with hyperparameters  complete  0.76297      0.76297       
+submission_new_features.csv  2024-11-08 20:29:37  new features                       complete  0.49663      0.49663       
+submission.csv               2024-11-08 18:17:01  first raw submission               complete  1.82227      1.82227       
+</pre>
 </div>
 </div>
 </div>
